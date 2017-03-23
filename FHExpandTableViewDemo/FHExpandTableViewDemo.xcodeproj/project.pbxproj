@@ -84,7 +84,7 @@
 		E0C68D131E83A2120051D8F4 = {
 			isa = PBXGroup;
 			children = (
-				E0C68D551E83A24A0051D8F4 /* New Group */,
+				E0C68D551E83A24A0051D8F4 /* FHExpandTableView */,
 				E0C68D1E1E83A2120051D8F4 /* FHExpandTableViewDemo */,
 				E0C68D381E83A2120051D8F4 /* FHExpandTableViewDemoTests */,
 				E0C68D431E83A2120051D8F4 /* FHExpandTableViewDemoUITests */,
@@ -144,13 +144,13 @@
 			path = FHExpandTableViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		E0C68D551E83A24A0051D8F4 /* New Group */ = {
+		E0C68D551E83A24A0051D8F4 /* FHExpandTableView */ = {
 			isa = PBXGroup;
 			children = (
 				E0C68D521E83A2450051D8F4 /* FHExpandTableView.h */,
 				E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */,
 			);
-			name = "New Group";
+			name = FHExpandTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
