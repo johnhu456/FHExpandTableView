@@ -16,6 +16,8 @@
 		E0C68D3A1E83A2120051D8F4 /* FHExpandTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D391E83A2120051D8F4 /* FHExpandTableViewDemoTests.m */; };
 		E0C68D451E83A2120051D8F4 /* FHExpandTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D441E83A2120051D8F4 /* FHExpandTableViewDemoUITests.m */; };
 		E0C68D541E83A2450051D8F4 /* FHExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */; };
+		E0C68D5C1E83CCC50051D8F4 /* FHTodoCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D5B1E83CCC50051D8F4 /* FHTodoCollection.m */; };
+		E0C68D5F1E83CCDA0051D8F4 /* FHTodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D5E1E83CCDA0051D8F4 /* FHTodoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		E0C68D461E83A2120051D8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C68D521E83A2450051D8F4 /* FHExpandTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHExpandTableView.h; path = FHExpandTableView/FHExpandTableView.h; sourceTree = "<group>"; };
 		E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHExpandTableView.m; path = FHExpandTableView/FHExpandTableView.m; sourceTree = "<group>"; };
+		E0C68D5A1E83CCC50051D8F4 /* FHTodoCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoCollection.h; path = Model/FHTodoCollection.h; sourceTree = "<group>"; };
+		E0C68D5B1E83CCC50051D8F4 /* FHTodoCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHTodoCollection.m; path = Model/FHTodoCollection.m; sourceTree = "<group>"; };
+		E0C68D5D1E83CCDA0051D8F4 /* FHTodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoItem.h; path = Model/FHTodoItem.h; sourceTree = "<group>"; };
+		E0C68D5E1E83CCDA0051D8F4 /* FHTodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHTodoItem.m; path = Model/FHTodoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		E0C68D1E1E83A2120051D8F4 /* FHExpandTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E0C68D591E83CCB70051D8F4 /* Model */,
 				E0C68D221E83A2120051D8F4 /* AppDelegate.h */,
 				E0C68D231E83A2120051D8F4 /* AppDelegate.m */,
 				E0C68D251E83A2120051D8F4 /* ViewController.h */,
@@ -151,6 +158,17 @@
 				E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */,
 			);
 			name = FHExpandTableView;
+			sourceTree = "<group>";
+		};
+		E0C68D591E83CCB70051D8F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0C68D5A1E83CCC50051D8F4 /* FHTodoCollection.h */,
+				E0C68D5B1E83CCC50051D8F4 /* FHTodoCollection.m */,
+				E0C68D5D1E83CCDA0051D8F4 /* FHTodoItem.h */,
+				E0C68D5E1E83CCDA0051D8F4 /* FHTodoItem.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C68D5C1E83CCC50051D8F4 /* FHTodoCollection.m in Sources */,
 				E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */,
 				E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */,
 				E0C68D211E83A2120051D8F4 /* main.m in Sources */,
+				E0C68D5F1E83CCDA0051D8F4 /* FHTodoItem.m in Sources */,
 				E0C68D541E83A2450051D8F4 /* FHExpandTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

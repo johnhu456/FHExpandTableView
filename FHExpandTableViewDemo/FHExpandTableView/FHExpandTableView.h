@@ -22,12 +22,22 @@
 /**
  Child nodes, expanded when father's expand property is YES
  */
-@property (nonatomic, strong) NSArray <FHExpandModel *> *subModel;
+@property (nonatomic, strong) NSArray <FHExpandModel *> *subModels;
+
+/**
+ Point to it's father node.
+ */
+@property (nonatomic, weak) FHExpandModel *fatherModel;
 
 /**
  A bool value to flag whether the model needs to expand the child nodes
  */
 @property (nonatomic, assign) BOOL expand;
+
+/**
+ Determine whether the models in same level can expand at the same time
+ */
+@property (nonatomic, assign) BOOL sameLevelExclusion;
 
 /**
  The number of all child nodes.
@@ -36,8 +46,6 @@
  otherwise only count the father node.
  */
 @property (nonatomic, assign) NSUInteger subModelCounts;
-
-@property (nonatomic, strong, readonly) NSIndexPath *indexPath;
 
 /**
  Use to storage your own custom object in FHExpandModel.
@@ -60,13 +68,20 @@
  */
 - (void)addSubModel:(FHExpandModel *)model;
 
+/**
+ Delete a subModel.
+ 
+ @param model MCExpandModel you want to delete
+ */
+- (void)deleteSubModel:(FHExpandModel *)model;
+
 @end
 
 #pragma mark - FHExpandTableView
 
 @interface FHExpandTableView : UITableView
 
-@property (nonatomic, strong) FHExpandModel *expandModel;
+@property (nonatomic, strong) NSArray<FHExpandModel*> *expandModels;
 
 @property (nonatomic, weak) id<FHExpandTableViewDelegate> expandDelegate;
 
@@ -86,7 +101,7 @@
  @param model The FHExpandModel you want to display.You should establish an association between your own custom cell and FHExpandModel.
  @return You custom cell.
  */
-- (UITableViewCell *)FHExpandTableView:(FHExpandTableView *)tableView
+- (UITableViewCell *)fhExpandTableView:(FHExpandTableView *)tableView
                           cellForModel:(FHExpandModel *)model;
 
 /**
@@ -96,7 +111,7 @@
  @param indexPath Selected IndexPath
  @param model Selected FHExpandModel
  */
-- (void)FHExpandTableView:(FHExpandTableView *)tableView
+- (void)fhExpandTableView:(FHExpandTableView *)tableView
      didSelectedIndexPath:(NSIndexPath *)indexPath
               expandModel:(FHExpandModel *)model;
 

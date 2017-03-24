@@ -13,37 +13,60 @@
     NSUInteger _totalCounts;
 }
 
+@property (nonatomic, strong) NSMutableArray <FHExpandModel *> *internalSubModels;
 @end
 
 @implementation FHExpandModel
 
-- (instancetype)init
-{
-    if (self = [super init])
-    {
+#pragma mark - Initialize
+
+- (instancetype)init {
+    if (self = [super init]) {
         _totalCounts = 1;
     }
     return self;
 }
 
-- (NSUInteger)subDataCount
-{
++ (instancetype)expandModelWithObject:(id)object identifier:(NSString *)identifier {
+    FHExpandModel *model = [[FHExpandModel alloc] init];
+    model.object = object;
+    model.identifier = identifier;
+    return model;
+}
+
+#pragma mark - Getter
+
+- (NSUInteger)subDataCount {
     return [self getSubModelCountWithModel:self];
 }
 
-- (NSUInteger)getSubModelCountWithModel:(FHExpandModel *)model
-{
+- (NSMutableArray<FHExpandModel *> *)internalSubModels {
+    if (_internalSubModels == nil) {
+        _internalSubModels = [[NSMutableArray alloc] init];
+    }
+    return _internalSubModels;
+}
+
+- (NSArray<FHExpandModel *> *)subModels {
+    return [self.internalSubModels copy];
+}
+
+#pragma mark - SubModel Operation
+
+- (void)setSubModels:(NSArray<FHExpandModel *> *)subModels {
+    self.internalSubModels = [[NSMutableArray alloc] initWithArray:subModels];
+}
+
+- (NSUInteger)getSubModelCountWithModel:(FHExpandModel *)model {
     // Traverse all child nodes
-    if (model.subModel.count) {
-        [model.subModel enumerateObjectsUsingBlock:^(FHExpandModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (model.expand)
-            {
+    if (model.subModels.count) {
+        [model.subModels enumerateObjectsUsingBlock:^(FHExpandModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (model.expand) {
                 [self getSubModelCountWithModel:obj];
             }
         }];
-        if (model.expand)
-        {
-            _totalCounts += model.subModel.count;
+        if (model.expand) {
+            _totalCounts += model.subModels.count;
         }
         return _totalCounts;
     } else {
@@ -51,27 +74,14 @@
     }
 }
 
-+ (instancetype)expandModelWithObject:(id)object identifier:(NSString *)identifier
-{
-    FHExpandModel *model = [[FHExpandModel alloc] init];
-    model.object = object;
-    model.identifier = identifier;
-    return model;
+- (void)addSubModel:(FHExpandModel *)model {
+    [self.internalSubModels addObject:model];
+    model.fatherModel = self;
 }
 
-- (void)addSubModel:(FHExpandModel *)model
-{
-    NSMutableArray *originSubModels;
-    if (self.subModel)
-    {
-        originSubModels = [[NSMutableArray alloc] initWithArray:self.subModel];
-    }
-    else
-    {
-        originSubModels = [[NSMutableArray alloc] init];
-    }
-    [originSubModels addObject:model];
-    self.subModel = [originSubModels copy];
+- (void)deleteSubModel:(FHExpandModel *)model {
+    [self.internalSubModels removeObject:model];
+    model.fatherModel = nil;
 }
 
 @end
@@ -85,6 +95,11 @@
 }
 
 @property (nonatomic, strong) NSMutableArray *pureData;
+
+/**
+ Use to package self.expandModels
+ */
+@property (nonatomic, strong) FHExpandModel *totalExpandModel;
 
 @property (nonatomic, strong) NSMutableArray <NSIndexPath *> *willFoldPaths;
 
@@ -113,7 +128,7 @@
     if (_pureData == nil)
     {
         _pureData = [[NSMutableArray alloc] init];
-        [_pureData addObject:self.expandModel];
+        [_pureData addObjectsFromArray:self.expandModels];
     }
     return _pureData;
 }
@@ -140,11 +155,11 @@
 - (void)setExpandDelegate:(id<FHExpandTableViewDelegate>)expandDelegate
 {
     _expandDelegate = expandDelegate;
-    if ([_expandDelegate respondsToSelector:@selector(FHExpandTableView:cellForModel:)])
+    if ([_expandDelegate respondsToSelector:@selector(fhExpandTableView:cellForModel:)])
     {
         _delegateFlag.cellForModel = YES;
     }
-    if ([_expandDelegate respondsToSelector:@selector(FHExpandTableView:didSelectedIndexPath:expandModel:)])
+    if ([_expandDelegate respondsToSelector:@selector(fhExpandTableView:didSelectedIndexPath:expandModel:)])
     {
         _delegateFlag.selectedForModel = YES;
     }
@@ -161,7 +176,7 @@
 {
     if (_delegateFlag.cellForModel)
     {
-        return [_expandDelegate FHExpandTableView:self cellForModel:self.pureData[indexPath.row]];
+        return [_expandDelegate fhExpandTableView:self cellForModel:self.pureData[indexPath.row]];
     }
     else
     {
@@ -176,32 +191,48 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (_delegateFlag.selectedForModel)
+    {
+        [_expandDelegate fhExpandTableView:self didSelectedIndexPath:indexPath expandModel:self.pureData[indexPath.row]];
+    }
+    self.totalExpandModel = [[FHExpandModel alloc] init];
+    self.totalExpandModel.expand = YES;
+    for (FHExpandModel *expandModel in self.expandModels) {
+        [self.totalExpandModel addSubModel:expandModel];
+    }
+    
     FHExpandModel *data = self.pureData[indexPath.row];
     data.expand = !data.expand;
+    if (data.sameLevelExclusion)
+    {
+        for (FHExpandModel *model in data.fatherModel.subModels) {
+            if (model != data)
+            {
+                model.expand = NO;
+                model.subModels = nil;
+            }
+        }
+    }
     NSArray *tempPureDataArray = [NSArray arrayWithArray:self.pureData];
-    self.pureData = nil;
-    [self getPureDataWithMetaData:self.expandModel];
+    [self.pureData removeAllObjects];
+    [self getPureDataWithMetaData:self.totalExpandModel];
     
     
     [self beginUpdates];
-    if (data.expand)
-    {
-        [self getWillExpandIndexPathsWithPreviousData:tempPureDataArray];
-        [self insertRowsAtIndexPaths:self.willExpandPaths withRowAnimation:UITableViewRowAnimationTop];
-    }
-    else
-    {
-        [self getWillFoldIndexPathsWithPreviousData:tempPureDataArray];
-        [self deleteRowsAtIndexPaths:self.willFoldPaths withRowAnimation:UITableViewRowAnimationTop];
-    }
+    //    if (data.expand)
+    //    {
+    [self getWillExpandIndexPathsWithPreviousData:tempPureDataArray];
+    [self insertRowsAtIndexPaths:self.willExpandPaths withRowAnimation:UITableViewRowAnimationTop];
+    //    }
+    //    else
+    //    {
+    [self getWillFoldIndexPathsWithPreviousData:tempPureDataArray];
+    [self deleteRowsAtIndexPaths:self.willFoldPaths withRowAnimation:UITableViewRowAnimationTop];
+    //    }
     [self endUpdates];
     [self.willExpandPaths removeAllObjects];
     [self.willFoldPaths removeAllObjects];
     [self deselectRowAtIndexPath:indexPath animated:YES];
-    if (_delegateFlag.selectedForModel)
-    {
-        [_expandDelegate FHExpandTableView:self didSelectedIndexPath:indexPath expandModel:self.pureData[indexPath.row]];
-    }
 }
 
 - (void)getWillFoldIndexPathsWithPreviousData:(NSArray <FHExpandModel *>*)data
@@ -229,8 +260,8 @@
 }
 
 - (NSArray <FHExpandModel *> *)getPureDataWithMetaData:(FHExpandModel *)data {
-    if (data.subModel.count) {
-        [data.subModel enumerateObjectsUsingBlock:^(FHExpandModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    if (data.subModels.count) {
+        [data.subModels enumerateObjectsUsingBlock:^(FHExpandModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (data.expand)
             {
                 [self.pureData addObject:obj];

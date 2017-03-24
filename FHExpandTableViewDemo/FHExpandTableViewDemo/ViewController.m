@@ -38,17 +38,17 @@
     data6.identifier = @"6";
     data7.identifier = @"7";
     data8.identifier = @"8";
-    data0.subModel = @[data1,data2];
-    data1.subModel = @[data3,data4];
-    data2.subModel = @[data5,data6];
+    data0.subModels = @[data1,data2];
+    data1.subModels = @[data3,data4];
+    data2.subModels = @[data5,data6];
     data7 = data0;
     data0.expand = NO;
     data8.expand = YES;
-    data8.subModel = @[data0];
+    data8.subModels = @[data0];
     self.data = data8;
     NSUInteger ha = data8.subModelCounts;
     NSLog(@"%lu",(unsigned long)ha);
-    tableView.expandModel = data8;
+    tableView.expandModels = @[data8];
     tableView.expandDelegate = self;
     [self.view addSubview:tableView];
 }
