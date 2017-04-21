@@ -24,6 +24,8 @@ static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIden
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"My To-do";
+    
     FHExpandTableView *tableView = [[FHExpandTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
 
     NSArray *todoCollections = [[[FHTodoModelManager alloc] init] getAllTodoCollection];
