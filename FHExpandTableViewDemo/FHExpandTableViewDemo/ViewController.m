@@ -46,8 +46,6 @@
     data8.expand = YES;
     data8.subModels = @[data0];
     self.data = data8;
-    NSUInteger ha = data8.subModelCounts;
-    NSLog(@"%lu",(unsigned long)ha);
     tableView.expandModels = @[data8];
     tableView.expandDelegate = self;
     [self.view addSubview:tableView];

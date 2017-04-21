@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02710FA1EA9CEA00048AA03 /* FHExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */; };
 		E0C68D211E83A2120051D8F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D201E83A2120051D8F4 /* main.m */; };
 		E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D231E83A2120051D8F4 /* AppDelegate.m */; };
 		E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D261E83A2120051D8F4 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		E0C68D2F1E83A2120051D8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C68D2D1E83A2120051D8F4 /* LaunchScreen.storyboard */; };
 		E0C68D3A1E83A2120051D8F4 /* FHExpandTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D391E83A2120051D8F4 /* FHExpandTableViewDemoTests.m */; };
 		E0C68D451E83A2120051D8F4 /* FHExpandTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D441E83A2120051D8F4 /* FHExpandTableViewDemoUITests.m */; };
-		E0C68D541E83A2450051D8F4 /* FHExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */; };
 		E0C68D5C1E83CCC50051D8F4 /* FHTodoCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D5B1E83CCC50051D8F4 /* FHTodoCollection.m */; };
 		E0C68D5F1E83CCDA0051D8F4 /* FHTodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D5E1E83CCDA0051D8F4 /* FHTodoItem.m */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E02710F41EA9CEA00048AA03 /* FHExpandTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHExpandTableView.h; sourceTree = "<group>"; };
+		E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHExpandTableView.m; sourceTree = "<group>"; };
 		E0C68D1C1E83A2120051D8F4 /* FHExpandTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHExpandTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C68D201E83A2120051D8F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E0C68D221E83A2120051D8F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		E0C68D401E83A2120051D8F4 /* FHExpandTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FHExpandTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C68D441E83A2120051D8F4 /* FHExpandTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FHExpandTableViewDemoUITests.m; sourceTree = "<group>"; };
 		E0C68D461E83A2120051D8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0C68D521E83A2450051D8F4 /* FHExpandTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHExpandTableView.h; path = FHExpandTableView/FHExpandTableView.h; sourceTree = "<group>"; };
-		E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHExpandTableView.m; path = FHExpandTableView/FHExpandTableView.m; sourceTree = "<group>"; };
 		E0C68D5A1E83CCC50051D8F4 /* FHTodoCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoCollection.h; path = Model/FHTodoCollection.h; sourceTree = "<group>"; };
 		E0C68D5B1E83CCC50051D8F4 /* FHTodoCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHTodoCollection.m; path = Model/FHTodoCollection.m; sourceTree = "<group>"; };
 		E0C68D5D1E83CCDA0051D8F4 /* FHTodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoItem.h; path = Model/FHTodoItem.h; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 		E0C68D551E83A24A0051D8F4 /* FHExpandTableView */ = {
 			isa = PBXGroup;
 			children = (
-				E0C68D521E83A2450051D8F4 /* FHExpandTableView.h */,
-				E0C68D531E83A2450051D8F4 /* FHExpandTableView.m */,
+				E02710F41EA9CEA00048AA03 /* FHExpandTableView.h */,
+				E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */,
 			);
 			name = FHExpandTableView;
 			sourceTree = "<group>";
@@ -308,11 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C68D5C1E83CCC50051D8F4 /* FHTodoCollection.m in Sources */,
+				E02710FA1EA9CEA00048AA03 /* FHExpandTableView.m in Sources */,
 				E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */,
 				E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */,
 				E0C68D211E83A2120051D8F4 /* main.m in Sources */,
 				E0C68D5F1E83CCDA0051D8F4 /* FHTodoItem.m in Sources */,
-				E0C68D541E83A2450051D8F4 /* FHExpandTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +550,7 @@
 				E0C68D4B1E83A2120051D8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C68D4C1E83A2120051D8F4 /* Build configuration list for PBXNativeTarget "FHExpandTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +559,7 @@
 				E0C68D4E1E83A2120051D8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C68D4F1E83A2120051D8F4 /* Build configuration list for PBXNativeTarget "FHExpandTableViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +568,7 @@
 				E0C68D511E83A2120051D8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
