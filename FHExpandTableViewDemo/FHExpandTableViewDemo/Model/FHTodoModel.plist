@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Jacob</string>
+		<key>completed</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Run for 40 mintues</string>
+				<key>date</key>
+				<date>2017-04-21T06:00:00Z</date>
+				<key>completed</key>
+				<true/>
+			</dict>
+		</array>
+		<key>unCompleted</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Fuel the car</string>
+				<key>date</key>
+				<date>2017-04-21T10:30:00Z</date>
+				<key>uncompleted</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

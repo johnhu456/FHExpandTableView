@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E02710FA1EA9CEA00048AA03 /* FHExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */; };
+		E02710FF1EA9D4F60048AA03 /* FHTodoModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E02710FE1EA9D4F60048AA03 /* FHTodoModelManager.m */; };
+		E02711021EA9D5FC0048AA03 /* FHTodoModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = E02711011EA9D5FC0048AA03 /* FHTodoModel.plist */; };
 		E0C68D211E83A2120051D8F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D201E83A2120051D8F4 /* main.m */; };
 		E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D231E83A2120051D8F4 /* AppDelegate.m */; };
 		E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D261E83A2120051D8F4 /* ViewController.m */; };
@@ -40,6 +42,9 @@
 /* Begin PBXFileReference section */
 		E02710F41EA9CEA00048AA03 /* FHExpandTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHExpandTableView.h; sourceTree = "<group>"; };
 		E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHExpandTableView.m; sourceTree = "<group>"; };
+		E02710FD1EA9D4F60048AA03 /* FHTodoModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoModelManager.h; path = Model/FHTodoModelManager.h; sourceTree = "<group>"; };
+		E02710FE1EA9D4F60048AA03 /* FHTodoModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHTodoModelManager.m; path = Model/FHTodoModelManager.m; sourceTree = "<group>"; };
+		E02711011EA9D5FC0048AA03 /* FHTodoModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FHTodoModel.plist; path = Model/FHTodoModel.plist; sourceTree = "<group>"; };
 		E0C68D1C1E83A2120051D8F4 /* FHExpandTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHExpandTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C68D201E83A2120051D8F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E0C68D221E83A2120051D8F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E02711001EA9D5D60048AA03 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E0C68D281E83A2120051D8F4 /* Main.storyboard */,
+				E0C68D2B1E83A2120051D8F4 /* Assets.xcassets */,
+				E0C68D2D1E83A2120051D8F4 /* LaunchScreen.storyboard */,
+				E0C68D301E83A2120051D8F4 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		E0C68D131E83A2120051D8F4 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +132,7 @@
 				E0C68D231E83A2120051D8F4 /* AppDelegate.m */,
 				E0C68D251E83A2120051D8F4 /* ViewController.h */,
 				E0C68D261E83A2120051D8F4 /* ViewController.m */,
-				E0C68D281E83A2120051D8F4 /* Main.storyboard */,
-				E0C68D2B1E83A2120051D8F4 /* Assets.xcassets */,
-				E0C68D2D1E83A2120051D8F4 /* LaunchScreen.storyboard */,
-				E0C68D301E83A2120051D8F4 /* Info.plist */,
+				E02711001EA9D5D60048AA03 /* Others */,
 				E0C68D1F1E83A2120051D8F4 /* Supporting Files */,
 			);
 			path = FHExpandTableViewDemo;
@@ -163,10 +176,13 @@
 		E0C68D591E83CCB70051D8F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E02710FD1EA9D4F60048AA03 /* FHTodoModelManager.h */,
+				E02710FE1EA9D4F60048AA03 /* FHTodoModelManager.m */,
 				E0C68D5A1E83CCC50051D8F4 /* FHTodoCollection.h */,
 				E0C68D5B1E83CCC50051D8F4 /* FHTodoCollection.m */,
 				E0C68D5D1E83CCDA0051D8F4 /* FHTodoItem.h */,
 				E0C68D5E1E83CCDA0051D8F4 /* FHTodoItem.m */,
+				E02711011EA9D5FC0048AA03 /* FHTodoModel.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -282,6 +298,7 @@
 			files = (
 				E0C68D2F1E83A2120051D8F4 /* LaunchScreen.storyboard in Resources */,
 				E0C68D2C1E83A2120051D8F4 /* Assets.xcassets in Resources */,
+				E02711021EA9D5FC0048AA03 /* FHTodoModel.plist in Resources */,
 				E0C68D2A1E83A2120051D8F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +327,7 @@
 				E0C68D5C1E83CCC50051D8F4 /* FHTodoCollection.m in Sources */,
 				E02710FA1EA9CEA00048AA03 /* FHExpandTableView.m in Sources */,
 				E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */,
+				E02710FF1EA9D4F60048AA03 /* FHTodoModelManager.m in Sources */,
 				E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */,
 				E0C68D211E83A2120051D8F4 /* main.m in Sources */,
 				E0C68D5F1E83CCDA0051D8F4 /* FHTodoItem.m in Sources */,

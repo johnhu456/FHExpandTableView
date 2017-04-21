@@ -8,6 +8,11 @@
 
 #import "ViewController.h"
 #import "FHExpandTableView.h"
+#import "FHTodoModelManager.h"
+
+static NSString *const kCollectionExpandIdentifier = @"kCollectionExpandIdentifier";
+static NSString *const kTodoExpandIdentifier = @"kTodoExpandIdentifier";
+static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIdentifier";
 
 @interface ViewController ()<FHExpandTableViewDelegate>
 
@@ -20,34 +25,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     FHExpandTableView *tableView = [[FHExpandTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    FHExpandModel *data0 = [[FHExpandModel alloc] init];
-    FHExpandModel *data1 = [[FHExpandModel alloc] init];
-    FHExpandModel *data2 = [[FHExpandModel alloc] init];
-    FHExpandModel *data3 = [[FHExpandModel alloc] init];
-    FHExpandModel *data4 = [[FHExpandModel alloc] init];
-    FHExpandModel *data5 = [[FHExpandModel alloc] init];
-    FHExpandModel *data6 = [[FHExpandModel alloc] init];
-    FHExpandModel *data7 = [[FHExpandModel alloc] init];
-    FHExpandModel *data8 = [[FHExpandModel alloc] init];
-    data0.identifier = @"0";
-    data1.identifier = @"1";
-    data2.identifier = @"2";
-    data3.identifier = @"3";
-    data4.identifier = @"4";
-    data5.identifier = @"5";
-    data6.identifier = @"6";
-    data7.identifier = @"7";
-    data8.identifier = @"8";
-    data0.subModels = @[data1,data2];
-    data1.subModels = @[data3,data4];
-    data2.subModels = @[data5,data6];
-    data7 = data0;
-    data0.expand = NO;
-    data8.expand = YES;
-    data8.subModels = @[data0];
-    self.data = data8;
-    tableView.expandModels = @[data8];
-    tableView.expandDelegate = self;
+
+    NSArray *todoCollections = [[[FHTodoModelManager alloc] init] getAllTodoCollection];
+    NSMutableArray *expandArray = [[NSMutableArray alloc] init];
+    
+    for (FHTodoCollection *collection in todoCollections) {
+        FHExpandModel *collectionModel = [FHExpandModel expandModelWithObject:collection identifier:kCollectionExpandIdentifier];
+        for (FHTodoItem *unComplete in collection.unCompleted) {
+            FHExpandModel *unCompleteModel = [FHExpandModel expandModelWithObject:unComplete identifier:kTodoExpandIdentifier];
+            [collectionModel addSubModel:unCompleteModel];
+        }
+        NSMutableArray *completedTodoExpandModels = [[NSMutableArray alloc] init];
+        for (FHTodoItem *complete in collection.completed) {
+            FHExpandModel *completeModel = [FHExpandModel expandModelWithObject:complete identifier:kTodoExpandIdentifier];
+            [completedTodoExpandModels addObject:completeModel];
+        }
+        if (completedTodoExpandModels.count) {
+            FHExpandModel *completedHeader = [FHExpandModel expandModelWithObject:nil identifier:kCompleteHeadExpandIdentifier];
+            completedHeader.subModels = completedTodoExpandModels;
+            [collectionModel addSubModel:completedHeader];
+        }
+        [expandArray addObject:collectionModel];
+    }
+    tableView.expandModels = expandArray;
     [self.view addSubview:tableView];
 }
 
@@ -55,7 +55,7 @@
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"1"];
     
-    if ([model.identifier isEqualToString:@"8"])
+    if ([model.identifier isEqualToString:kCollectionExpandIdentifier])
     {
         cell.backgroundColor = [UIColor redColor];
     }
@@ -69,7 +69,7 @@
 
 - (void)FHExpandTableView:(FHExpandTableView *)tableView didSelectedCellForModel:(FHExpandModel *)model
 {
-    NSLog(@"======%@",model.identifier);
+
 }
 
 - (void)didReceiveMemoryWarning {

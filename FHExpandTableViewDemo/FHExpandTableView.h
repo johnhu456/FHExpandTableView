@@ -2,8 +2,8 @@
 //  FHExpandTableView.h
 //  FHExpandTableView
 //
-//  Created by Moxtra on 2017/3/23.
-//  Copyright © 2017年 Moxtra. All rights reserved.
+//  Created by 胡翔 on 2017/3/23.
+//  Copyright © 2017年 胡翔. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -49,6 +49,8 @@ NS_ASSUME_NONNULL_BEGIN
  Use to storage your own custom object in FHExpandModel.
  */
 @property (nonatomic, weak, nullable) id object;
+
+@property (nonatomic, assign) Class objectClass;
 
 
 /**
