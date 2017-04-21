@@ -31,6 +31,7 @@ static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIden
     
     for (FHTodoCollection *collection in todoCollections) {
         FHExpandModel *collectionModel = [FHExpandModel expandModelWithObject:collection identifier:kCollectionExpandIdentifier];
+        collectionModel.sameLevelExclusion = YES;
         for (FHTodoItem *unComplete in collection.unCompleted) {
             FHExpandModel *unCompleteModel = [FHExpandModel expandModelWithObject:unComplete identifier:kTodoExpandIdentifier];
             [collectionModel addSubModel:unCompleteModel];

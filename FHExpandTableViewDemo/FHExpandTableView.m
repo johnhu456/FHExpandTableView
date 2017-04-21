@@ -226,7 +226,9 @@ static NSString *const kFHExpandTableViewDefaultReuseIdentifier = @"kFHExpandTab
         for (FHExpandModel *model in data.fatherModel.subModels) {
             if (model != data) {
                 model.expand = NO;
-                model.subModels = nil;
+                if (model.clearSubModelsWhenFold) {
+                    model.subModels = nil;
+                }
             }
         }
     }

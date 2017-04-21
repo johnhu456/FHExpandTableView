@@ -39,11 +39,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL interactionEnabled;
 
 /**
- Determine whether the models in same level can expand at the same time
+ A bool value to decide whether the models in same level can expand at the same time
  */
 @property (nonatomic, assign) BOOL sameLevelExclusion;
 
-@property (nonatomic, strong, readonly) NSIndexPath *indexPath;
+/**
+ A bool value to decide whether clear the subModels after it be fold. Normally for saving memory, default is NO.
+ */
+@property (nonatomic, assign) BOOL clearSubModelsWhenFold;
 
 /**
  Use to storage your own custom object in FHExpandModel.
