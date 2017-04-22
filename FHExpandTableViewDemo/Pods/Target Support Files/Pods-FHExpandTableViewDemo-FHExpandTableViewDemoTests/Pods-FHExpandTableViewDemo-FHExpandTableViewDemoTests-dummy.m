@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_FHExpandTableViewDemo_FHExpandTableViewDemoTests : NSObject
+@end
+@implementation PodsDummy_Pods_FHExpandTableViewDemo_FHExpandTableViewDemoTests
+@end
