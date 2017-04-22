@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A0FCD131E40D37268880CF00BCB038F0'
-               BlueprintName = 'Pods-FHExpandTableViewDemoTests'
+               BlueprintIdentifier = '80C687EF38CB99AFA90C1ABA9D081215'
+               BlueprintName = 'Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-FHExpandTableViewDemoTests.a'>
+               BuildableName = 'libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

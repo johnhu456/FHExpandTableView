@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D17BC121AB24BCA7675908EE7B9F5EDE'
+               BlueprintIdentifier = 'AB175B4661FF8DE0E4C122FC789491F4'
                BlueprintName = 'Pods-FHExpandTableViewDemo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-FHExpandTableViewDemo.a'>

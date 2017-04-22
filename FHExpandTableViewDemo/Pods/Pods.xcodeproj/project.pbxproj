@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		01E09711F001C49F92A97060414E262B /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DD7E31C5EE9F88DD498269ACD6B7B49 /* Pods-FHExpandTableViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6D95B759149640322E035AC4452F2D /* Pods-FHExpandTableViewDemo-dummy.m */; };
+		1077B5BF94044C3BD1437A5E549BBBF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F28AEAAF722BC62BF5B37D6663BBC2 /* MASViewAttribute.m */; };
 		1EC363D6911160B063DB6CC87F595A5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 		1F3BD3BC28432BB5E2F73501E06E4579 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B030E109A3BB87AACB2461620BB1CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */; };
+		3DA5BB6187F9D6DCFE8CD156B8637B54 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7999932CFC3F7DA2AFC0DDA91EFFE680 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-dummy.m */; };
 		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		490CA524521F7D444EA58FA915D7E99C /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49B903D576E09560C52AA92FDCC31A68 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,26 +27,31 @@
 		86EE1CB5473A4A07081D8DE3A2C45924 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7E17DB5590A8C4D9625D67E6FBD243 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */; };
 		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 807FFD255E8235D5B42FE078299B5F1B /* MASLayoutConstraint.m */; };
-		97ECE1FE3DBC6D66234CB115A3AB8106 /* Pods-FHExpandTableViewDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D42314ABF8E2E114F42D8EBAA4BC0D9 /* Pods-FHExpandTableViewDemoUITests-dummy.m */; };
+		97ECE1FE3DBC6D66234CB115A3AB8106 /* Pods-FHExpandTableViewDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E55428C335E8B83220B5242436F7EEFA /* Pods-FHExpandTableViewDemoUITests-dummy.m */; };
 		983CB852CBBFBC04C2A6BA407E34F59B /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9F610CB90E57B81F8F7DCA2176E0FD /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9934AEA2C891C201D8ED5746FF42FE1B /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */; };
 		A2A005CBC91B77906C62F958FA67205F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		A6436E3CFFCBFE591E2D2A68ED90CAC6 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A83991D7C1373DF66020C2FDFC5D7564 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB5D67BCB01587D5BF7681C708740BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		B7E3CBA41D8E89CF66A2B6941EF84B45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		C88F85D3200060BD98FC13EA58121706 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */; };
+		DE895B0A52DF6DB16E2DECB76167431F /* Pods-FHExpandTableViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B389215A7ECB232CED9C591A45305C21 /* Pods-FHExpandTableViewDemo-dummy.m */; };
 		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */; };
 		E072DA57403C4BFF9B10467BE05604C5 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1E771349813022263F549BDF33CB4BB /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 915A6FF0E04F5A5C0ACDE0E32BD2F193 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC48DE078CA5E55922CCE02354D475CD /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 780A86CEB0A0131C88BE12414D500734 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F727EF5502331F06C35D53E847194A19 /* Pods-FHExpandTableViewDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A520B3D1D6B4383D4A1B093BC4C18C3A /* Pods-FHExpandTableViewDemoTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E0C604CF00EBA5752236C64B4CD2AA44 /* PBXContainerItemProxy */ = {
+		C1D1805F528A9D7EB2C2352D7277D97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8D9E02903E93BD0B2FEC9D846EA20;
+			remoteInfo = Masonry;
+		};
+		F8E7B92BF54C588D7590F45EDEEC66C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -54,87 +61,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02628DA7A3380B3313BDC6FCCEDF5C7D /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		043FB94CF93050E20D8E4C071ACFA5D2 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		0EF318542E5708F2998DCB05B1A48A1D /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		12476E0866A34FF774EDA2FA25621418 /* Pods-FHExpandTableViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemo-resources.sh"; sourceTree = "<group>"; };
+		0A1A198B7E9439D8575885A77207DBF2 /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1321572A3ED9C894C94A131BE29B81B2 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		1B2531EDB39878C335EAA0F4E779A9C6 /* Pods-FHExpandTableViewDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FHExpandTableViewDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1D74B0D42413680DC409C5CEE8E11278 /* Pods-FHExpandTableViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FHExpandTableViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B3E69E9D261C8EDFD4EE0422A6A43EB /* Pods-FHExpandTableViewDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FHExpandTableViewDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		22E2395DA2EBCF6241A0DA0E1859FF45 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		25CED739CF35B6D0A1D95AE17D712A7F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		2FCC2A09AC3DCD0E4A3D268DAABC5135 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		3162AC8E29FA7F3BF0D8641F7F4D9B60 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		33068D8B158B38234B703FD5EC239729 /* Pods-FHExpandTableViewDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
-		45AF6B00DA1D56588A6D8F77634DD4D6 /* Pods-FHExpandTableViewDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FHExpandTableViewDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		475326F2A929CD1AFFB74850961F32C0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		4C9C1D260D8D51E03C8D3AEDBCE93187 /* Pods-FHExpandTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
-		608B6811C11ED18C9424F2FCEA08F67E /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49A39671A1E6FED5ED552FF868F2E693 /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A716E4D0CCFEFFBE1253D698479423C /* Pods-FHExpandTableViewDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemoUITests-resources.sh"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69C495F791D071730F4029032128036C /* Pods-FHExpandTableViewDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FHExpandTableViewDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		74D536493285DD5511CCF88EF57A141B /* Pods-FHExpandTableViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		7598C15B7E174EEA1452ED89DABFE678 /* Pods-FHExpandTableViewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6545610BBEB5F1D2D038A9816A3FCBFD /* Pods-FHExpandTableViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FHExpandTableViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66BF5908510A556CC99844924D9E748A /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-resources.sh"; sourceTree = "<group>"; };
+		70587D12D804993E3339B5276686B30E /* Pods-FHExpandTableViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemo-resources.sh"; sourceTree = "<group>"; };
+		725A83695F5FBD5B499D31DFE5C97E28 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		742E511248F6E918095156B31020F95A /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-frameworks.sh"; sourceTree = "<group>"; };
 		780A86CEB0A0131C88BE12414D500734 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		7882AB8492CA4F59F730C76CC3BBF57A /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		78CE1CE559E062B3590A4FB596367198 /* libPods-FHExpandTableViewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FHExpandTableViewDemoUITests.a"; path = "libPods-FHExpandTableViewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7999932CFC3F7DA2AFC0DDA91EFFE680 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-dummy.m"; sourceTree = "<group>"; };
 		7B5A231E76AF7DC6CB887B5B2C522A7A /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		7C18D153E0C88358A929B8FA9F1E2F53 /* libPods-FHExpandTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FHExpandTableViewDemo.a"; path = "libPods-FHExpandTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		807FFD255E8235D5B42FE078299B5F1B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		8229525E7067F22D3977D2628DF5F2C3 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		82F28AEAAF722BC62BF5B37D6663BBC2 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		8564F62CC3AADA3A5EF91941320D7E3D /* Pods-FHExpandTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8A9F610CB90E57B81F8F7DCA2176E0FD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8D6D95B759149640322E035AC4452F2D /* Pods-FHExpandTableViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FHExpandTableViewDemo-dummy.m"; sourceTree = "<group>"; };
-		8DD61371B55BF39CC19D71701A73CCF8 /* Pods-FHExpandTableViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FHExpandTableViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B089363C942627FA95BC529F83E690F /* libPods-FHExpandTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FHExpandTableViewDemo.a"; path = "libPods-FHExpandTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7E17DB5590A8C4D9625D67E6FBD243 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		915A6FF0E04F5A5C0ACDE0E32BD2F193 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		981BD979E158BD990F9972B19E2AAEBD /* Pods-FHExpandTableViewDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FHExpandTableViewDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D42314ABF8E2E114F42D8EBAA4BC0D9 /* Pods-FHExpandTableViewDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FHExpandTableViewDemoUITests-dummy.m"; sourceTree = "<group>"; };
 		9F937BDEB8DF93A08D20C5355C0FDB5C /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		A2F75C96947B2651F82FC18F66C43B49 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		A520B3D1D6B4383D4A1B093BC4C18C3A /* Pods-FHExpandTableViewDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FHExpandTableViewDemoTests-dummy.m"; sourceTree = "<group>"; };
+		ADD15E00F7469F6614164F4115FB7271 /* Pods-FHExpandTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B179F4D3D34A3CE25A698B8D9AC9D6C2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		B44F75F7193D4297A67612025E4555E7 /* libPods-FHExpandTableViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FHExpandTableViewDemoTests.a"; path = "libPods-FHExpandTableViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B389215A7ECB232CED9C591A45305C21 /* Pods-FHExpandTableViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FHExpandTableViewDemo-dummy.m"; sourceTree = "<group>"; };
 		B48867DE203BCF3BB3DFCAB8FDC7516B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		C0358A6F2745BB15006B58F859457F9A /* Pods-FHExpandTableViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemo-frameworks.sh"; sourceTree = "<group>"; };
-		C5A8CAB3A1A0735C48B2DF1FE03EEE6B /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C694A7AFD4F735BCC90DA548CC631F09 /* Pods-FHExpandTableViewDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemoUITests-resources.sh"; sourceTree = "<group>"; };
+		C37E916ECA44B1A5FE5A7D25763EEC20 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C613B3301FDF8ACE5943BD35015BF826 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C762C4F3A304C10AF7EBEA6AAA8508A0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		C7C02266037F030E22468AC86802DB57 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		D52125774958E6265A2F0BF60759DD72 /* libPods-FHExpandTableViewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FHExpandTableViewDemoUITests.a"; path = "libPods-FHExpandTableViewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCA02F032D6047163E3F067859A65C0 /* Pods-FHExpandTableViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemo-frameworks.sh"; sourceTree = "<group>"; };
+		D053CC7B73258F82EFB8A454557D73D6 /* Pods-FHExpandTableViewDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FHExpandTableViewDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2D6BCB809FC78F861944B24BF00DB5D /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a"; path = "libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5EC6EDDDD3E503C5B2E967D3FEECFEB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		DE01C4E1E7406C01B1AA8B3574FFC0BB /* Pods-FHExpandTableViewDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
 		E158FC65C5404E098F16E26F478DA504 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		E188BA9FF2C668E907F3CA1737CBE45C /* Pods-FHExpandTableViewDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemoTests-resources.sh"; sourceTree = "<group>"; };
+		E2C499FCCEF0B10FD63AC62A0AA5CDC6 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E55428C335E8B83220B5242436F7EEFA /* Pods-FHExpandTableViewDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FHExpandTableViewDemoUITests-dummy.m"; sourceTree = "<group>"; };
 		EC0384F145CF471A951BA8E9486AD626 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		F16919A44AFEC10F33CC4628EC0F675E /* Pods-FHExpandTableViewDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FHExpandTableViewDemoTests-frameworks.sh"; sourceTree = "<group>"; };
-		F6A26994888B30E896636CCEAF524195 /* Pods-FHExpandTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FHExpandTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F8911A80DC9361AAB974534FBC56EE8F /* Pods-FHExpandTableViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FHExpandTableViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		F8AB44751192F0AA8DA5F75A06138D15 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		FA891F8E85C079B4FB101DDD5BC7A477 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		FBE23E70FF64ACC81816A368E171B903 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01F4D68743C68C8E6547724F2BDA2B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1077B5BF94044C3BD1437A5E549BBBF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				566EA65277D377CE9AF9BC125521965B /* Foundation.framework in Frameworks */,
 				1EC363D6911160B063DB6CC87F595A5B /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8614DAE371E0EA9B61E9E3C8BBC19E6C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB5D67BCB01587D5BF7681C708740BBE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2A48037668F66EFE6A7A458C1969458 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7E3CBA41D8E89CF66A2B6941EF84B45 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,37 +145,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6AB09C6314028B312C8EBB33BDCF05B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B030E109A3BB87AACB2461620BB1CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09C0F953F79B635C3305272886476FD3 /* Pods-FHExpandTableViewDemoUITests */ = {
+		22675F524819C999E8EA1789FA542404 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				45AF6B00DA1D56588A6D8F77634DD4D6 /* Pods-FHExpandTableViewDemoUITests-acknowledgements.markdown */,
-				1B2531EDB39878C335EAA0F4E779A9C6 /* Pods-FHExpandTableViewDemoUITests-acknowledgements.plist */,
-				9D42314ABF8E2E114F42D8EBAA4BC0D9 /* Pods-FHExpandTableViewDemoUITests-dummy.m */,
-				33068D8B158B38234B703FD5EC239729 /* Pods-FHExpandTableViewDemoUITests-frameworks.sh */,
-				C694A7AFD4F735BCC90DA548CC631F09 /* Pods-FHExpandTableViewDemoUITests-resources.sh */,
-				608B6811C11ED18C9424F2FCEA08F67E /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */,
-				C5A8CAB3A1A0735C48B2DF1FE03EEE6B /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */,
+				725A83695F5FBD5B499D31DFE5C97E28 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-acknowledgements.markdown */,
+				02628DA7A3380B3313BDC6FCCEDF5C7D /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-acknowledgements.plist */,
+				7999932CFC3F7DA2AFC0DDA91EFFE680 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-dummy.m */,
+				742E511248F6E918095156B31020F95A /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-frameworks.sh */,
+				66BF5908510A556CC99844924D9E748A /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-resources.sh */,
+				C613B3301FDF8ACE5943BD35015BF826 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig */,
+				E2C499FCCEF0B10FD63AC62A0AA5CDC6 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig */,
 			);
-			name = "Pods-FHExpandTableViewDemoUITests";
-			path = "Target Support Files/Pods-FHExpandTableViewDemoUITests";
-			sourceTree = "<group>";
-		};
-		0C00AB3BFD2C003E75715D0CD688BFE6 /* Pods-FHExpandTableViewDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				69C495F791D071730F4029032128036C /* Pods-FHExpandTableViewDemoTests-acknowledgements.markdown */,
-				981BD979E158BD990F9972B19E2AAEBD /* Pods-FHExpandTableViewDemoTests-acknowledgements.plist */,
-				A520B3D1D6B4383D4A1B093BC4C18C3A /* Pods-FHExpandTableViewDemoTests-dummy.m */,
-				F16919A44AFEC10F33CC4628EC0F675E /* Pods-FHExpandTableViewDemoTests-frameworks.sh */,
-				E188BA9FF2C668E907F3CA1737CBE45C /* Pods-FHExpandTableViewDemoTests-resources.sh */,
-				7598C15B7E174EEA1452ED89DABFE678 /* Pods-FHExpandTableViewDemoTests.debug.xcconfig */,
-				74D536493285DD5511CCF88EF57A141B /* Pods-FHExpandTableViewDemoTests.release.xcconfig */,
-			);
-			name = "Pods-FHExpandTableViewDemoTests";
-			path = "Target Support Files/Pods-FHExpandTableViewDemoTests";
+			name = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests";
+			path = "Target Support Files/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests";
 			sourceTree = "<group>";
 		};
 		3B9FAC5BAEA75CAB3E20372C4D27D7EE /* Masonry */ = {
@@ -221,6 +213,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		439C08EA2BD0E65C8ED80A11DD61121F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C37E916ECA44B1A5FE5A7D25763EEC20 /* libMasonry.a */,
+				8B089363C942627FA95BC529F83E690F /* libPods-FHExpandTableViewDemo.a */,
+				D2D6BCB809FC78F861944B24BF00DB5D /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a */,
+				78CE1CE559E062B3590A4FB596367198 /* libPods-FHExpandTableViewDemoUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4854BD850DB1ADEB02DE483F0C44E016 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,12 +235,27 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		588C36ABB708D8A55A46FE715DA6CE7C /* Targets Support Files */ = {
+		4BD8A71B2F7031D3AF40EF5411C3D828 /* Pods-FHExpandTableViewDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F8FEE24F70E14D59FFBCA55F566A8095 /* Pods-FHExpandTableViewDemo */,
-				0C00AB3BFD2C003E75715D0CD688BFE6 /* Pods-FHExpandTableViewDemoTests */,
-				09C0F953F79B635C3305272886476FD3 /* Pods-FHExpandTableViewDemoUITests */,
+				D053CC7B73258F82EFB8A454557D73D6 /* Pods-FHExpandTableViewDemoUITests-acknowledgements.markdown */,
+				1B3E69E9D261C8EDFD4EE0422A6A43EB /* Pods-FHExpandTableViewDemoUITests-acknowledgements.plist */,
+				E55428C335E8B83220B5242436F7EEFA /* Pods-FHExpandTableViewDemoUITests-dummy.m */,
+				DE01C4E1E7406C01B1AA8B3574FFC0BB /* Pods-FHExpandTableViewDemoUITests-frameworks.sh */,
+				4A716E4D0CCFEFFBE1253D698479423C /* Pods-FHExpandTableViewDemoUITests-resources.sh */,
+				49A39671A1E6FED5ED552FF868F2E693 /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */,
+				0A1A198B7E9439D8575885A77207DBF2 /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-FHExpandTableViewDemoUITests";
+			path = "Target Support Files/Pods-FHExpandTableViewDemoUITests";
+			sourceTree = "<group>";
+		};
+		6A797081B053A3C7413B952024638DE2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6EC8F27733B70F7F72CA05400BFF37E /* Pods-FHExpandTableViewDemo */,
+				22675F524819C999E8EA1789FA542404 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests */,
+				4BD8A71B2F7031D3AF40EF5411C3D828 /* Pods-FHExpandTableViewDemoUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -248,20 +266,24 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				E9B49E9D4F6BC02AA78DCF86BCED2145 /* Pods */,
-				E14658B6AF1C6FC2BD1A910FB78E75D5 /* Products */,
-				588C36ABB708D8A55A46FE715DA6CE7C /* Targets Support Files */,
+				439C08EA2BD0E65C8ED80A11DD61121F /* Products */,
+				6A797081B053A3C7413B952024638DE2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E14658B6AF1C6FC2BD1A910FB78E75D5 /* Products */ = {
+		B6EC8F27733B70F7F72CA05400BFF37E /* Pods-FHExpandTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0EF318542E5708F2998DCB05B1A48A1D /* libMasonry.a */,
-				7C18D153E0C88358A929B8FA9F1E2F53 /* libPods-FHExpandTableViewDemo.a */,
-				B44F75F7193D4297A67612025E4555E7 /* libPods-FHExpandTableViewDemoTests.a */,
-				D52125774958E6265A2F0BF60759DD72 /* libPods-FHExpandTableViewDemoUITests.a */,
+				6545610BBEB5F1D2D038A9816A3FCBFD /* Pods-FHExpandTableViewDemo-acknowledgements.markdown */,
+				F8911A80DC9361AAB974534FBC56EE8F /* Pods-FHExpandTableViewDemo-acknowledgements.plist */,
+				B389215A7ECB232CED9C591A45305C21 /* Pods-FHExpandTableViewDemo-dummy.m */,
+				CCCA02F032D6047163E3F067859A65C0 /* Pods-FHExpandTableViewDemo-frameworks.sh */,
+				70587D12D804993E3339B5276686B30E /* Pods-FHExpandTableViewDemo-resources.sh */,
+				ADD15E00F7469F6614164F4115FB7271 /* Pods-FHExpandTableViewDemo.debug.xcconfig */,
+				8564F62CC3AADA3A5EF91941320D7E3D /* Pods-FHExpandTableViewDemo.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-FHExpandTableViewDemo";
+			path = "Target Support Files/Pods-FHExpandTableViewDemo";
 			sourceTree = "<group>";
 		};
 		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
@@ -279,21 +301,6 @@
 				3B9FAC5BAEA75CAB3E20372C4D27D7EE /* Masonry */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		F8FEE24F70E14D59FFBCA55F566A8095 /* Pods-FHExpandTableViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-				1D74B0D42413680DC409C5CEE8E11278 /* Pods-FHExpandTableViewDemo-acknowledgements.markdown */,
-				8DD61371B55BF39CC19D71701A73CCF8 /* Pods-FHExpandTableViewDemo-acknowledgements.plist */,
-				8D6D95B759149640322E035AC4452F2D /* Pods-FHExpandTableViewDemo-dummy.m */,
-				C0358A6F2745BB15006B58F859457F9A /* Pods-FHExpandTableViewDemo-frameworks.sh */,
-				12476E0866A34FF774EDA2FA25621418 /* Pods-FHExpandTableViewDemo-resources.sh */,
-				F6A26994888B30E896636CCEAF524195 /* Pods-FHExpandTableViewDemo.debug.xcconfig */,
-				4C9C1D260D8D51E03C8D3AEDBCE93187 /* Pods-FHExpandTableViewDemo.release.xcconfig */,
-			);
-			name = "Pods-FHExpandTableViewDemo";
-			path = "Target Support Files/Pods-FHExpandTableViewDemo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +331,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		80C687EF38CB99AFA90C1ABA9D081215 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6FA87EB2CC6B052D52E91C830C4DAF0 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests" */;
+			buildPhases = (
+				97240F3D7B7AC559D8CDBAC52BC59D2D /* Sources */,
+				01F4D68743C68C8E6547724F2BDA2B94 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC19790950E7DB9A2E361E947CCD320F /* PBXTargetDependency */,
+			);
+			name = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests";
+			productName = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests";
+			productReference = D2D6BCB809FC78F861944B24BF00DB5D /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9CAEBF4B121A9AB110473DC1504A9AA4 /* Pods-FHExpandTableViewDemoUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29FD203F4A386717336FC811DC275DE2 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemoUITests" */;
@@ -337,7 +361,7 @@
 			);
 			name = "Pods-FHExpandTableViewDemoUITests";
 			productName = "Pods-FHExpandTableViewDemoUITests";
-			productReference = D52125774958E6265A2F0BF60759DD72 /* libPods-FHExpandTableViewDemoUITests.a */;
+			productReference = 78CE1CE559E062B3590A4FB596367198 /* libPods-FHExpandTableViewDemoUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */ = {
@@ -354,40 +378,24 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 0EF318542E5708F2998DCB05B1A48A1D /* libMasonry.a */;
+			productReference = C37E916ECA44B1A5FE5A7D25763EEC20 /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A0FCD131E40D37268880CF00BCB038F0 /* Pods-FHExpandTableViewDemoTests */ = {
+		AB175B4661FF8DE0E4C122FC789491F4 /* Pods-FHExpandTableViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 173A64DDF19C639F67CEB487233D90DD /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemoTests" */;
+			buildConfigurationList = 64F7B921E456E2CD21B0964B324F0215 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemo" */;
 			buildPhases = (
-				F779C925ECF7407F1AC9076B89E0E7B8 /* Sources */,
-				8614DAE371E0EA9B61E9E3C8BBC19E6C /* Frameworks */,
+				AFF48EA1D0A11E4C0CE3C740DA76D1E1 /* Sources */,
+				E6AB09C6314028B312C8EBB33BDCF05B /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				658501E406C5E040DDAFF3B19427C613 /* PBXTargetDependency */,
-			);
-			name = "Pods-FHExpandTableViewDemoTests";
-			productName = "Pods-FHExpandTableViewDemoTests";
-			productReference = B44F75F7193D4297A67612025E4555E7 /* libPods-FHExpandTableViewDemoTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D17BC121AB24BCA7675908EE7B9F5EDE /* Pods-FHExpandTableViewDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 26C306CCC943C9B061B6547714E6B9F2 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemo" */;
-			buildPhases = (
-				DC07068ABAD4F6359F32E95296575438 /* Sources */,
-				A2A48037668F66EFE6A7A458C1969458 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
+				C8214C0500E007E79F5630168EAF4AA0 /* PBXTargetDependency */,
 			);
 			name = "Pods-FHExpandTableViewDemo";
 			productName = "Pods-FHExpandTableViewDemo";
-			productReference = 7C18D153E0C88358A929B8FA9F1E2F53 /* libPods-FHExpandTableViewDemo.a */;
+			productReference = 8B089363C942627FA95BC529F83E690F /* libPods-FHExpandTableViewDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -407,19 +415,35 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E14658B6AF1C6FC2BD1A910FB78E75D5 /* Products */;
+			productRefGroup = 439C08EA2BD0E65C8ED80A11DD61121F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */,
-				D17BC121AB24BCA7675908EE7B9F5EDE /* Pods-FHExpandTableViewDemo */,
-				A0FCD131E40D37268880CF00BCB038F0 /* Pods-FHExpandTableViewDemoTests */,
+				AB175B4661FF8DE0E4C122FC789491F4 /* Pods-FHExpandTableViewDemo */,
+				80C687EF38CB99AFA90C1ABA9D081215 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests */,
 				9CAEBF4B121A9AB110473DC1504A9AA4 /* Pods-FHExpandTableViewDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		97240F3D7B7AC559D8CDBAC52BC59D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA5BB6187F9D6DCFE8CD156B8637B54 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF48EA1D0A11E4C0CE3C740DA76D1E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE895B0A52DF6DB16E2DECB76167431F /* Pods-FHExpandTableViewDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4BE2DC1E815E7367562323223772531 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,14 +462,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC07068ABAD4F6359F32E95296575438 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DD7E31C5EE9F88DD498269ACD6B7B49 /* Pods-FHExpandTableViewDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DCCF9F8434724A883AD14A46F2F7246E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,29 +470,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F779C925ECF7407F1AC9076B89E0E7B8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F727EF5502331F06C35D53E847194A19 /* Pods-FHExpandTableViewDemoTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		658501E406C5E040DDAFF3B19427C613 /* PBXTargetDependency */ = {
+		AC19790950E7DB9A2E361E947CCD320F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
-			targetProxy = E0C604CF00EBA5752236C64B4CD2AA44 /* PBXContainerItemProxy */;
+			targetProxy = C1D1805F528A9D7EB2C2352D7277D97D /* PBXContainerItemProxy */;
+		};
+		C8214C0500E007E79F5630168EAF4AA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 9DC8D9E02903E93BD0B2FEC9D846EA20 /* Masonry */;
+			targetProxy = F8E7B92BF54C588D7590F45EDEEC66C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0CDFE28AF29595E9FA98D75745E01DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 608B6811C11ED18C9424F2FCEA08F67E /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = 49A39671A1E6FED5ED552FF868F2E693 /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -583,9 +597,9 @@
 			};
 			name = Release;
 		};
-		82EB813EAD9F9717DFDBC07C18627C8B /* Debug */ = {
+		76A55679B8A680F123C88DC764ECEB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7598C15B7E174EEA1452ED89DABFE678 /* Pods-FHExpandTableViewDemoTests.debug.xcconfig */;
+			baseConfigurationReference = C613B3301FDF8ACE5943BD35015BF826 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -606,19 +620,19 @@
 			};
 			name = Debug;
 		};
-		8D7847C73739A0DB727B2B6F22B22619 /* Release */ = {
+		8253958045F21A4F5C9288F51035DA0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C9C1D260D8D51E03C8D3AEDBCE93187 /* Pods-FHExpandTableViewDemo.release.xcconfig */;
+			baseConfigurationReference = ADD15E00F7469F6614164F4115FB7271 /* Pods-FHExpandTableViewDemo.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -627,34 +641,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
-		};
-		942ACC91056F7BA0B1461A7FFA40C7A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74D536493285DD5511CCF88EF57A141B /* Pods-FHExpandTableViewDemoTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 		D0EB4C41789B1904D5D70386D14D27DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5A8CAB3A1A0735C48B2DF1FE03EEE6B /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */;
+			baseConfigurationReference = 0A1A198B7E9439D8575885A77207DBF2 /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -675,19 +666,19 @@
 			};
 			name = Release;
 		};
-		DC9F834856A9C8A941A13AF7E1ADC2EB /* Debug */ = {
+		D42DF455324833314439BEC03F608135 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6A26994888B30E896636CCEAF524195 /* Pods-FHExpandTableViewDemo.debug.xcconfig */;
+			baseConfigurationReference = 8564F62CC3AADA3A5EF91941320D7E3D /* Pods-FHExpandTableViewDemo.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -696,7 +687,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -742,27 +733,32 @@
 			};
 			name = Debug;
 		};
+		F6B071011DF426550852F96F5169EDE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C499FCCEF0B10FD63AC62A0AA5CDC6 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		173A64DDF19C639F67CEB487233D90DD /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82EB813EAD9F9717DFDBC07C18627C8B /* Debug */,
-				942ACC91056F7BA0B1461A7FFA40C7A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		26C306CCC943C9B061B6547714E6B9F2 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC9F834856A9C8A941A13AF7E1ADC2EB /* Debug */,
-				8D7847C73739A0DB727B2B6F22B22619 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		29FD203F4A386717336FC811DC275DE2 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -786,6 +782,24 @@
 			buildConfigurations = (
 				5A6ACE61C4D128598EA7472C87982601 /* Debug */,
 				6CA42F62CE0652819ED46936FE31E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64F7B921E456E2CD21B0964B324F0215 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8253958045F21A4F5C9288F51035DA0B /* Debug */,
+				D42DF455324833314439BEC03F608135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6FA87EB2CC6B052D52E91C830C4DAF0 /* Build configuration list for PBXNativeTarget "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A55679B8A680F123C88DC764ECEB43 /* Debug */,
+				F6B071011DF426550852F96F5169EDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -74,7 +74,6 @@
             make.bottom.equalTo(self.contentView);
             make.height.equalTo(@2.0f);
         }];
-        
         [self setExpanded:NO animated:NO];
     }
     

@@ -27,7 +27,7 @@
             }
         }
         if ([collectionDic valueForKey:@"unCompleted"]) {
-            for (NSDictionary *unCompleteTodoDic in [collectionDic valueForKey:@"completed"]) {
+            for (NSDictionary *unCompleteTodoDic in [collectionDic valueForKey:@"unCompleted"]) {
                 FHTodoItem *unCompletedTodoItem = [[FHTodoItem alloc] init];
                 [unCompletedTodoItem setValuesForKeysWithDictionary:unCompleteTodoDic];
                 [unCompleted addObject:unCompletedTodoItem];
@@ -38,8 +38,9 @@
         collection.completed = [completed copy];
         collection.unCompleted = [unCompleted copy];
         [result addObject:collection];
+        [completed removeAllObjects];
+        [unCompleted removeAllObjects];
     }
-    NSLog(@"%@",result);
     return result;
 }
 

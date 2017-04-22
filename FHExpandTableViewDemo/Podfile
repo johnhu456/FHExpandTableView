@@ -2,14 +2,13 @@
 # platform :ios, '9.0'
 
 target 'FHExpandTableViewDemo' do
+    pod 'Masonry'
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
   # Pods for FHExpandTableViewDemo
 
   target 'FHExpandTableViewDemoTests' do
-    inherit! :search_paths
-    pod 'Masonry'
     # Pods for testing
   end
 

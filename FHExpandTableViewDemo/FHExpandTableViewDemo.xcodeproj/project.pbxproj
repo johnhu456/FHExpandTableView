@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FDCFF7E517205CFB5628696 /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D053DD626B735579E95273D /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a */; };
 		6D2CF86606099B05801C6776 /* libPods-FHExpandTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37337EA51E62F115D369659F /* libPods-FHExpandTableViewDemo.a */; };
 		AEB9BDE3171D080E6D97B2E8 /* libPods-FHExpandTableViewDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 151FC5E8A249336F4DE04FD6 /* libPods-FHExpandTableViewDemoUITests.a */; };
 		E02710FA1EA9CEA00048AA03 /* FHExpandTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */; };
 		E02710FF1EA9D4F60048AA03 /* FHTodoModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E02710FE1EA9D4F60048AA03 /* FHTodoModelManager.m */; };
 		E02711021EA9D5FC0048AA03 /* FHTodoModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = E02711011EA9D5FC0048AA03 /* FHTodoModel.plist */; };
-		E02711061EA9EDA90048AA03 /* MCExpandHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E02711051EA9EDA90048AA03 /* MCExpandHeadCell.m */; };
+		E02711061EA9EDA90048AA03 /* FHExpandHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E02711051EA9EDA90048AA03 /* FHExpandHeadCell.m */; };
 		E027110D1EA9FB930048AA03 /* Marco.h in Sources */ = {isa = PBXBuildFile; fileRef = E02711071EA9F1380048AA03 /* Marco.h */; };
+		E02711131EAA0A5A0048AA03 /* FHExpandCompleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E02711121EAA0A5A0048AA03 /* FHExpandCompleteCell.m */; };
+		E02711161EAAE3010048AA03 /* FHTodoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E02711151EAAE3010048AA03 /* FHTodoListCell.m */; };
 		E0C68D211E83A2120051D8F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D201E83A2120051D8F4 /* main.m */; };
 		E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D231E83A2120051D8F4 /* AppDelegate.m */; };
 		E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C68D261E83A2120051D8F4 /* ViewController.m */; };
@@ -48,17 +51,24 @@
 		0CDFCC558D5E630CB27CC6A9 /* libPods-FHExpandTableViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FHExpandTableViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		151FC5E8A249336F4DE04FD6 /* libPods-FHExpandTableViewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FHExpandTableViewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37337EA51E62F115D369659F /* libPods-FHExpandTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FHExpandTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D053DD626B735579E95273D /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F76CDAFF063CECAA50BADF /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHExpandTableViewDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FHExpandTableViewDemoUITests/Pods-FHExpandTableViewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95BC5FAA71E183670DBA3C94 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F6A93D993A0F49B8290B98 /* Pods-FHExpandTableViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHExpandTableViewDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		C15B4A5C65AB445A2850670F /* Pods-FHExpandTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHExpandTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FHExpandTableViewDemo/Pods-FHExpandTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C3A6C411525BCC595E9E30EA /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E02710F41EA9CEA00048AA03 /* FHExpandTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHExpandTableView.h; sourceTree = "<group>"; };
 		E02710F51EA9CEA00048AA03 /* FHExpandTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHExpandTableView.m; sourceTree = "<group>"; };
 		E02710FD1EA9D4F60048AA03 /* FHTodoModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoModelManager.h; path = Model/FHTodoModelManager.h; sourceTree = "<group>"; };
 		E02710FE1EA9D4F60048AA03 /* FHTodoModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHTodoModelManager.m; path = Model/FHTodoModelManager.m; sourceTree = "<group>"; };
 		E02711011EA9D5FC0048AA03 /* FHTodoModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = FHTodoModel.plist; path = Model/FHTodoModel.plist; sourceTree = "<group>"; };
 		E02711041EA9EDA90048AA03 /* FHExpandHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHExpandHeadCell.h; path = Views/FHExpandHeadCell.h; sourceTree = "<group>"; };
-		E02711051EA9EDA90048AA03 /* MCExpandHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCExpandHeadCell.m; path = Views/MCExpandHeadCell.m; sourceTree = "<group>"; };
+		E02711051EA9EDA90048AA03 /* FHExpandHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHExpandHeadCell.m; path = Views/FHExpandHeadCell.m; sourceTree = "<group>"; };
 		E02711071EA9F1380048AA03 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
+		E02711111EAA0A5A0048AA03 /* FHExpandCompleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHExpandCompleteCell.h; path = Views/FHExpandCompleteCell.h; sourceTree = "<group>"; };
+		E02711121EAA0A5A0048AA03 /* FHExpandCompleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHExpandCompleteCell.m; path = Views/FHExpandCompleteCell.m; sourceTree = "<group>"; };
+		E02711141EAAE3010048AA03 /* FHTodoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FHTodoListCell.h; path = Views/FHTodoListCell.h; sourceTree = "<group>"; };
+		E02711151EAAE3010048AA03 /* FHTodoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FHTodoListCell.m; path = Views/FHTodoListCell.m; sourceTree = "<group>"; };
 		E0C68D1C1E83A2120051D8F4 /* FHExpandTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FHExpandTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C68D201E83A2120051D8F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E0C68D221E83A2120051D8F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE30D9BA257036BA5360C170 /* libPods-FHExpandTableViewDemoTests.a in Frameworks */,
+				1FDCFF7E517205CFB5628696 /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +129,7 @@
 				37337EA51E62F115D369659F /* libPods-FHExpandTableViewDemo.a */,
 				0CDFCC558D5E630CB27CC6A9 /* libPods-FHExpandTableViewDemoTests.a */,
 				151FC5E8A249336F4DE04FD6 /* libPods-FHExpandTableViewDemoUITests.a */,
+				4D053DD626B735579E95273D /* libPods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +143,8 @@
 				96F6A93D993A0F49B8290B98 /* Pods-FHExpandTableViewDemoTests.release.xcconfig */,
 				70F76CDAFF063CECAA50BADF /* Pods-FHExpandTableViewDemoUITests.debug.xcconfig */,
 				F68C41F2018B72B919FA23DF /* Pods-FHExpandTableViewDemoUITests.release.xcconfig */,
+				C3A6C411525BCC595E9E30EA /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig */,
+				95BC5FAA71E183670DBA3C94 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -149,8 +163,12 @@
 		E02711031EA9ED4E0048AA03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E02711141EAAE3010048AA03 /* FHTodoListCell.h */,
+				E02711151EAAE3010048AA03 /* FHTodoListCell.m */,
+				E02711111EAA0A5A0048AA03 /* FHExpandCompleteCell.h */,
+				E02711121EAA0A5A0048AA03 /* FHExpandCompleteCell.m */,
 				E02711041EA9EDA90048AA03 /* FHExpandHeadCell.h */,
-				E02711051EA9EDA90048AA03 /* MCExpandHeadCell.m */,
+				E02711051EA9EDA90048AA03 /* FHExpandHeadCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -442,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemoTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		423BA5DF1AF8C3A54AFBB335 /* [CP] Check Pods Manifest.lock */ = {
@@ -502,7 +520,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemoTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests/Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E724138E73AD32052893B5F4 /* [CP] Embed Pods Frameworks */ = {
@@ -527,15 +545,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02711131EAA0A5A0048AA03 /* FHExpandCompleteCell.m in Sources */,
 				E027110D1EA9FB930048AA03 /* Marco.h in Sources */,
 				E0C68D5C1E83CCC50051D8F4 /* FHTodoCollection.m in Sources */,
 				E02710FA1EA9CEA00048AA03 /* FHExpandTableView.m in Sources */,
 				E0C68D271E83A2120051D8F4 /* ViewController.m in Sources */,
+				E02711161EAAE3010048AA03 /* FHTodoListCell.m in Sources */,
 				E02710FF1EA9D4F60048AA03 /* FHTodoModelManager.m in Sources */,
 				E0C68D241E83A2120051D8F4 /* AppDelegate.m in Sources */,
 				E0C68D211E83A2120051D8F4 /* main.m in Sources */,
 				E0C68D5F1E83CCDA0051D8F4 /* FHTodoItem.m in Sources */,
-				E02711061EA9EDA90048AA03 /* MCExpandHeadCell.m in Sources */,
+				E02711061EA9EDA90048AA03 /* FHExpandHeadCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +653,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -674,6 +696,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LIBTOOLFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -688,6 +712,10 @@
 				DEVELOPMENT_TEAM = 8RG52VJRN9;
 				INFOPLIST_FILE = FHExpandTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = madao.FHExpandTableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -701,6 +729,10 @@
 				DEVELOPMENT_TEAM = 8RG52VJRN9;
 				INFOPLIST_FILE = FHExpandTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = madao.FHExpandTableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -708,7 +740,7 @@
 		};
 		E0C68D4D1E83A2120051D8F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38F2E32978711C404E87C81 /* Pods-FHExpandTableViewDemoTests.debug.xcconfig */;
+			baseConfigurationReference = C3A6C411525BCC595E9E30EA /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8RG52VJRN9;
@@ -722,7 +754,7 @@
 		};
 		E0C68D4E1E83A2120051D8F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96F6A93D993A0F49B8290B98 /* Pods-FHExpandTableViewDemoTests.release.xcconfig */;
+			baseConfigurationReference = 95BC5FAA71E183670DBA3C94 /* Pods-FHExpandTableViewDemo-FHExpandTableViewDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8RG52VJRN9;

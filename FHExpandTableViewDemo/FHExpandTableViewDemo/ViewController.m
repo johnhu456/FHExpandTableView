@@ -10,13 +10,22 @@
 #import "FHExpandTableView.h"
 #import "FHTodoModelManager.h"
 
+#import "FHExpandHeadCell.h"
+#import "FHExpandCompleteCell.h"
+#import "FHTodoListCell.h"
+
 static NSString *const kCollectionExpandIdentifier = @"kCollectionExpandIdentifier";
 static NSString *const kTodoExpandIdentifier = @"kTodoExpandIdentifier";
 static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIdentifier";
 
+static NSString *const kExpandHeadCellReuseIdentifier = @"kExpandHeadCellReuseIdentifier";
+static NSString *const kCompleteHeadCellReuseIdentifier = @"kCompleteHeadCellReuseIdentifier";
+static NSString *const kTodoListCellReuseIdentifier = @"kTodoListCellReuseIdentifier";
+
 @interface ViewController ()<FHExpandTableViewDelegate>
 
 @property (nonatomic, strong) FHExpandModel *data;
+@property (nonatomic, strong) NSArray<FHTodoCollection *> *todoCollections;
 
 @end
 
@@ -27,8 +36,16 @@ static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIden
     self.title = @"My To-do";
     
     FHExpandTableView *tableView = [[FHExpandTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    //Register Cells
+    [tableView registerClass:[FHExpandHeadCell class] forCellReuseIdentifier:kExpandHeadCellReuseIdentifier];
+    [tableView registerClass:[FHExpandCompleteCell class] forCellReuseIdentifier:kCompleteHeadExpandIdentifier];
+    [tableView registerClass:[FHTodoListCell class] forCellReuseIdentifier:kTodoListCellReuseIdentifier];
+    
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    tableView.expandDelegate = self;
 
     NSArray *todoCollections = [[[FHTodoModelManager alloc] init] getAllTodoCollection];
+    self.todoCollections = todoCollections;
     NSMutableArray *expandArray = [[NSMutableArray alloc] init];
     
     for (FHTodoCollection *collection in todoCollections) {
@@ -46,6 +63,7 @@ static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIden
         if (completedTodoExpandModels.count) {
             FHExpandModel *completedHeader = [FHExpandModel expandModelWithObject:nil identifier:kCompleteHeadExpandIdentifier];
             completedHeader.subModels = completedTodoExpandModels;
+            completedHeader.expand = YES;
             [collectionModel addSubModel:completedHeader];
         }
         [expandArray addObject:collectionModel];
@@ -54,17 +72,27 @@ static NSString *const kCompleteHeadExpandIdentifier = @"kCompleteHeadExpandIden
     [self.view addSubview:tableView];
 }
 
-- (UITableViewCell *)FHExpandTableView:(FHExpandTableView *)tableView cellForModel:(FHExpandModel *)model
-{
+
+- (UITableViewCell *)FHExpandTableView:(FHExpandTableView *)tableView cellForModel:(FHExpandModel *)model {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"1"];
     
-    if ([model.identifier isEqualToString:kCollectionExpandIdentifier])
-    {
-        cell.backgroundColor = [UIColor redColor];
+    if ([model.identifier isEqualToString:kCollectionExpandIdentifier]) {
+        FHExpandHeadCell *headCell = [tableView dequeueReusableCellWithIdentifier:kExpandHeadCellReuseIdentifier];
+        FHTodoCollection *collection = (FHTodoCollection *)model.object;
+        headCell.title = collection.name;
+        headCell.badgeNumber = collection.unCompleted.count;
+        return headCell;
     }
-    else
-    {
-        cell.backgroundColor = [UIColor blueColor];
+    else if ([model.identifier isEqualToString:kCompleteHeadExpandIdentifier]) {
+        FHExpandCompleteCell *completeCell = [tableView dequeueReusableCellWithIdentifier:kCompleteHeadExpandIdentifier];
+        FHTodoCollection *collection = (FHTodoCollection *)model.fatherModel.object;
+        completeCell.title = [NSString stringWithFormat:@"%lu completed",(unsigned long)collection.completed.count];
+        return completeCell;
+    }
+    else if ([model.identifier isEqualToString:kTodoExpandIdentifier]) {
+        FHTodoListCell *todoListCell = [tableView dequeueReusableCellWithIdentifier:kTodoListCellReuseIdentifier];
+        todoListCell.todoItem = model.object;
+        return  todoListCell;
     }
     cell.textLabel.text = model.identifier;
     return cell;
