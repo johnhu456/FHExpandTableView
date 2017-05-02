@@ -87,6 +87,7 @@ static NSString *const kTodoListCellReuseIdentifier = @"kTodoListCellReuseIdenti
         FHExpandCompleteCell *completeCell = [tableView dequeueReusableCellWithIdentifier:kCompleteHeadExpandIdentifier];
         FHTodoCollection *collection = (FHTodoCollection *)model.fatherModel.object;
         completeCell.title = [NSString stringWithFormat:@"%lu completed",(unsigned long)collection.completed.count];
+        completeCell.expand = model.expand;
         return completeCell;
     }
     else if ([model.identifier isEqualToString:kTodoExpandIdentifier]) {
@@ -98,9 +99,12 @@ static NSString *const kTodoListCellReuseIdentifier = @"kTodoListCellReuseIdenti
     return cell;
 }
 
-- (void)FHExpandTableView:(FHExpandTableView *)tableView didSelectedCellForModel:(FHExpandModel *)model
+- (void)FHExpandTableView:(FHExpandTableView *)tableView didSelectedIndexPath:(NSIndexPath *)indexPath expandModel:(FHExpandModel *)model
 {
-
+    if ([model.identifier isEqualToString:kCompleteHeadExpandIdentifier]) {
+        FHExpandCompleteCell *completeCell = [tableView cellForRowAtIndexPath:indexPath];
+        [completeCell setExpand:!model.expand];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
